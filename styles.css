@@ -92,8 +92,13 @@ a {
   font-weight: 700;
 }
 
-.link-icon:hover {
-  fill: var(--color-primary-blue);
+.link-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.link-icon:hover svg {
+  fill: #2b7fff; /* колір при наведенні */
 }
 
 /* Beauty Zone */
@@ -222,9 +227,36 @@ h1 {
 
 /* footer */
 
-footer, a, ul {
-  color: var(--color-primary-white);
+footer {
   background-color: var(--color-primary-dark);
+  color: var(--color-primary-white);
 }
 
+.link-footer {
+  text-decoration: none;
+  color: var(--color-primary-white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
+.link-footer:hover {
+  font-weight: 700;
+}
+
+.link-icon-footer svg {
+  fill: var(--color-primary-white);
+  transition: fill 0.3s ease;
+}
+
+.link-icon-footer:hover svg {
+  transform: scale(1.1);
+  transition: fill 0.3s ease;
+}
+
+.politico {
+  text-decoration: none;
+  color: var(--color-primary-white);
+}
