@@ -1,0 +1,230 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v48-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v48-latin-600.woff2') format('woff2'),
+    url('../fonts/roboto-v48-latin-600.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v48-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v48-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v20-latin-regular.woff2') format('woff2'),
+    url('../fonts/play-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v20-latin-700.woff2') format('woff2'),
+    url('../fonts/play-v20-latin-700.woff') format('woff');
+}
+
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-blue: #2b7fff;
+  --color-primary-white: #fff;
+}
+
+body {
+  color: var(--color-primary-dark);
+  font-family: 'Poboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  font-family: 'Play', sans-serif;
+  font-style: normal;
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Link-header */
+.link-header {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+}
+
+.link-header:hover {
+  color: var(--color-primary-blue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.link-icon:hover {
+  fill: var(--color-primary-blue);
+}
+
+/* Beauty Zone */
+
+h1 {
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
+  color: var(--color-primary-dark);
+  font-weight: 400;
+}
+
+.beauty-zone {
+  color: var(--color-primary-blue);
+  font-family: 'Play' sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 0.81;
+}
+
+.top-btn {
+  color: var(--color-primary-white);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--color-primary-blue);
+  border: var(--color-primary-blue);
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.top-btn:hover,
+.top-btn:active {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-blue);
+}
+
+.beauty-item {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+/* About us section */
+
+.accent {
+  font-family: 'Play' sans-serif;
+  color: var(--color-primary-blue);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.p-accent {
+  font-weight: 600;
+}
+
+#about-us-section p {
+  line-height: 1.72;
+}
+
+/* why-we-section */
+
+#why-we-section p {
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+/* our-procedures */
+
+.procedures-item {
+  color: var(--color-primary-white);
+  text-align: center;
+  line-height: 1.18;
+}
+
+/* how-to-find-section */
+
+.form h3 {
+  font-size: 22px;
+  color: var(--color-primary-white);
+}
+.form {
+  background-color: var(--color-primary-dark);
+}
+
+.accent-bottom {
+  font-family: 'Roboto' sans-serif;
+  color: var(--color-primary-blue);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bottom-btn {
+  color: var(--color-primary-white);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--color-primary-blue);
+  border: var(--color-primary-blue);
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.policy {
+  color: #747272;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.policy-link {
+  color: #747272;
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+/* footer */
+
+footer, a, ul {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-dark);
+}
+
+
