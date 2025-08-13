@@ -52,40 +52,50 @@
             <button class="top-btn" type="button">Замовити дзвінок</button>
             <p class="beauty-item">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
         </section>
-        <section id="about-us-section">
-            <h2>Перевтілюйтесь в <span class="accent" lang="en">Beauty zone!</span></h2>
-            <p>Наша косметологічна клініка пропонує вам професійні послуги
-                з догляду за шкірою обличчя та тіла. </p>
-            <p>B <span class="p-accent" lang="en">Beauty zone</span> ми гарантуємо найвищі стандарти якості
-                та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та
-                молодість.
-                З нами краса назавжди!</p>
-            <ul>
-                <li><img src="./images/face-1.jpg" alt="face 1"></li>
-                <li><img src="./images/face-2.jpg" alt="face 2"></li>
-                <li><img src="./images/Star-1.svg" alt="star 1"></li>
-                <li><img src="./images/Star-2.svg" alt="star 2"></li>
-                <li><img src="./images/Star-3.svg" alt="star 3"></li>
-            </ul>
+        <section class="about-us-section" id="about-us-section">
+            <h2 class="about-us-title">Перевтілюйтесь в <span class="accent" lang="en">Beauty zone!</span></h2>
+            <p class="about-us-text">Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла. </p>
+            <p>B <span class="p-accent" lang="en">Beauty zone</span> ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість.
+            З нами краса назавжди!</p>
+            <div class="face-images">
+                <ul>
+                    <li><img src="./images/face-1.jpg" alt="face 1"></li>
+                    <li><img src="./images/face-2.jpg" alt="face 2"></li>
+                    <li><img src="./images/Star-1.svg" alt="star 1"></li>
+                    <li><img src="./images/Star-2.svg" alt="star 2"></li>
+                    <li><img src="./images/Star-3.svg" alt="star 3"></li>
+                </ul>
+            </div>
         </section>
-        <section id="why-we-section">
-            <h2>Чому люди <span class="accent">обирають нас</span></h2>
-            <article>
-                <img src="./images/game-icons.svg" alt="game icon">
-                <p>Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</p>
-            </article>
-            <article>
-                <img src="./images/medicine-icon.svg" alt="medicine icon">
-                <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
-            </article>
-            <article>
-                <img src="./images/crown-icon.svg" alt="">
-                <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
-            </article>
+        <section class="why-we-section" id="why-we-section">
+            <h2 class="why-we-title">Чому люди <span class="accent">обирають нас</span></h2>
+            <div class="why-we-list">
+                <article class="why-we-item">
+                    <svg class="why-we-icon" width="48" height="48">
+                        <use href="./sprite.svg#icon-game-icons"></use>
+                    </svg>
+                    <p class="why-we-text">Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</p>
+                </article>
+            
+                <article class="why-we-item">
+                    <svg class="why-we-icon" width="48" height="48">
+                        <use href="./sprite.svg#icon-medicine-icon"></use>
+                    </svg>
+                    <p class="why-we-text">Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
+                </article>
+            
+                <article class="why-we-item">
+                    <svg class="why-we-icon" width="48" height="48">
+                        <use href="./sprite.svg#icon-crown-icon"></use>
+                    </svg>
+                    <p class="why-we-text">Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+                </article>
+            </div>
+
         </section>
-        <section id="our-procedures">
+        <section class="our-procedures" id="our-procedures">
             <h2>Наші <span class="accent">процедури</span></h2>
-            <ul>
+            <ul class="our-procedures-list">
                 <li>
                     <article>
                         <img src="./images/masks.jpg" alt="masks">
@@ -117,18 +127,23 @@
                 <li></li>
             </ul> -->
         </section>
-        <section id="how-to-find-section">
+        <section class="how-to-find-section" id="how-to-find-section">
             <h2>Як нас <span class="accent">знайти</span></h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.939879501699!2d30.515553976945704!3d50.442220487955765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1752650671062!5m2!1sru!2sde"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form class="form">
-                <h3>Запишіться <span class="accent-bottom">безкоштовно</span> <br> та отримайте подарунок</h3>
-                <button class="bottom-btn" type="button">Записатись безкоштовно</button>
-                <p class="policy">Натискаючи на кнопку я погоджуюсь <a class="policy-link" href="#" target="_self">з
-                        політикою конфіденційності</a></p>
-            </form>
+            <div class="contact-grid">
+                <iframe class="contact-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.939879501699!2d30.515553976945704!3d50.442220487955765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1752650671062!5m2!1sru!2sde"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <form id="form" class="form" autocomplete="on" novalidate>
+                    <h3 class="form-title">Запишіться <span class="accent-bottom">безкоштовно</span> <br> та отримайте подарунок</h3>
+                    <input id="fullName" class="form-input" name="fullName" type="text" placeholder="Ваше ім’я та прізвище" required>
+                    <input id="phone" class="form-input" name="phone" type="tel" placeholder="Ваш номер телефону" required>
+                    <input id="email" class="form-input" name="email" type="email" placeholder="Ваша електронна пошта" required>
+                    <button class="bottom-btn" type="button">Записатись безкоштовно</button>
+                
+                    <p class="policy">Натискаючи на кнопку я погоджуюсь <a class="policy-link" href="#" target="_self">з політикою конфіденційності</a></p>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
