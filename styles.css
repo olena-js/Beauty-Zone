@@ -51,7 +51,7 @@
 
 body {
   color: var(--color-primary-dark);
-  font-family: 'Poboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: normal;
@@ -59,6 +59,9 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -85,12 +88,41 @@ a {
 }
 
 /* Link-header */
-.link-header {
-  color: var(--color-primary-dark);
-  font-size: 18px;
+
+.header {
+  padding: 42.50px 0;
 }
 
-.link-header:hover {
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav > ul {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  margin-right: 240px;
+}
+
+.header-link-list {
+  gap: 56px;
+  margin-right: 240px;
+}
+
+.header-link {
+  display: inline-block;
+  max-width: max-content;
+  padding: 10.5px;
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-link:hover {
   color: var(--color-primary-blue);
   font-size: 18px;
   font-weight: 700;
@@ -99,10 +131,11 @@ a {
 .link-icon {
   width: 32px;
   height: 32px;
+  color: var(--color-primary-dark);
 }
 
 .link-icon:hover svg {
-  fill: #2b7fff;
+  color: #2b7fff;
   transform: scale(1.1);
 }
 
@@ -240,6 +273,11 @@ h1 {
   gap: 16px;
 }
 
+.our-procedures-list article {
+  width: 344px;
+  height: 456px;
+}
+
 .procedures-item {
   color: var(--color-primary-dark); 
   text-align: center;
@@ -264,6 +302,8 @@ h1 {
 
 .contact-map {
   border-radius: 32px;
+  width:605px;
+  height: 481px;
 }
 
 .form {
@@ -273,6 +313,7 @@ h1 {
   display:grid;
   gap:16px;
   position:relative;
+
 }
 
 .form-title {
@@ -281,18 +322,30 @@ h1 {
 }
 
 .form-input {
+  padding: 18px 32.85px;
   background-color: var(--color-primary-dark);
   border-radius: 32px;
-  border: 2px solid var(--beauty-landing-2-5, #747272);
+  border: 2px solid #747272;
+  color: var(--color-primary-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  box-shadow: none;
+  background-clip: padding-box;  
 }
 
 .form-input::placeholder {
   color: var(--color-primary-white);
-  padding: 18px 32.85px   ;
 }
 
+.form-input:active, .form-input:hover {
+  border: 2px solid var(--color-primary-white);  
+}
 .accent-bottom {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--color-primary-blue);
   font-size: 22px;
   font-weight: 600;
@@ -303,7 +356,7 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   background-color: var(--color-primary-blue);
-  border: var(--color-primary-blue);
+  border:2px solid var(--color-primary-blue);
   padding: 16px 32px;
   border-radius: 32px;
   cursor: pointer;
@@ -331,36 +384,62 @@ h1 {
 
 /* footer */
 
-footer {
+.footer {
+  display: flex;
+  padding: 56px 101px 56px 100px;
+  gap: 186px;
   background-color: var(--color-primary-dark);
   color: var(--color-primary-white);
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-.link-footer {
-  text-decoration: none;
+.footer-link {
   color: var(--color-primary-white);
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.link-footer:hover {
+.footer-link:hover {
+  font-size: 16px;
   font-weight: 700;
 }
 
-.link-icon-footer svg {
-  fill: var(--color-primary-white);
+.footer-link-list {
+  gap: 16px;
+}
+
+.footer-icon-list {
+  display: inline-flex;
+}
+
+.footer-icon-link svg {
+  color: var(--color-primary-white);
   transition: fill 0.3s ease;
 }
 
-.link-icon-footer:hover svg {
+.footer-icon-link:hover svg {
   transform: scale(1.1);
   transition: fill 0.3s ease;
 }
 
-.politico {
+.politico-link {
   text-decoration: none;
   color: var(--color-primary-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.politico-text {
+  color: #747272;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
