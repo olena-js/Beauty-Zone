@@ -64,7 +64,13 @@ ul {
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
 }
 
@@ -87,34 +93,45 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Link-header */
 
 .header {
-  padding: 42.50px 0;
+  padding: 42.5px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+.container-title {
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
 }
 
 .header-nav {
   display: flex;
-  align-items: center;
-}
-
-.header-nav > ul {
-  display: flex;
-  align-items: center;
-  
-}
-
-.logo {
-  margin-right: 240px;
 }
 
 .header-link-list {
+  display: flex;
   gap: 56px;
-  margin-right: 240px;
 }
 
 .header-link {
-  display: inline-block;
   max-width: max-content;
   padding: 10.5px;
   color: var(--color-primary-dark);
@@ -128,6 +145,10 @@ a {
   font-weight: 700;
 }
 
+.icon-list {
+  display: flex;
+}
+
 .link-icon {
   width: 32px;
   height: 32px;
@@ -139,10 +160,9 @@ a {
   transform: scale(1.1);
 }
 
-/* Beauty Zone */
+/* Beauty Zone -- Hero Section*/
 
 h1 {
-  font-family: 'Play', sans-serif;
   font-size: 18px;
   color: var(--color-primary-dark);
   font-weight: 400;
@@ -155,6 +175,10 @@ h1 {
 .hero-section {
   margin-top: 123.12px;
   margin-bottom: 126.81px;
+  background-image: url(./images/doctor-with-patient.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .beauty-zone {
@@ -194,6 +218,10 @@ h1 {
 
 /* About us section */
 
+.about-container {
+  display: flex;
+}
+
 .about-us-section {
   margin-top: 39.66px;
   margin-bottom: 176px;
@@ -218,9 +246,12 @@ h1 {
   font-weight: 600;
 }
 
-
 .about-us-section p {
   line-height: 1.72;
+}
+
+.face-img {
+  border-radius: 328px;
 }
 
 /* why-we-section */
@@ -230,6 +261,7 @@ h1 {
 }
 
 .why-we-title {
+  text-align: center;
   margin-bottom: 48px;
 }
 
@@ -241,7 +273,7 @@ h1 {
 .why-we-item {
   display: flex;
   flex-direction: column;
-  text-align: center; 
+  text-align: center;
   align-items: center;
   padding: 24px 32px;
   border-radius: 32px;
@@ -250,12 +282,13 @@ h1 {
 }
 
 .why-we-icon {
-  margin-bottom: 8px; 
-  fill: currentColor; 
-  color: #2b7fff; 
+  margin-bottom: 8px;
+  fill: currentColor;
+  color: #2b7fff;
 }
 
 .why-we-text {
+  max-width: 252px;
   color: #000;
   text-align: center;
   font-size: 18px;
@@ -268,18 +301,43 @@ h1 {
   margin-bottom: 96px;
 }
 
+.procedures-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .our-procedures-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
-.our-procedures-list article {
-  width: 344px;
-  height: 456px;
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
 }
 
-.procedures-item {
-  color: var(--color-primary-dark); 
+.our-procedures-list div {
+  width: 100%;
+  max-width: 344px;
+  max-height: 456px;
+}
+
+.procedures-card {
+  height: 456px;
+  border-radius: 120px 4px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    var(--color-primary-dark) 101.39%
+  );
+  
+}
+
+.procedures-text {
+  max-width: 152px;
+  color: var(--color-primary-dark);
   text-align: center;
   line-height: 1.18;
   text-align: center;
@@ -289,31 +347,64 @@ h1 {
   font-weight: 400;
 }
 
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark); 
+  background-color: transparent;
+  padding: 0;
+}
+
+.carousel-arrow {
+  fill: var(--color-primary-dark);
+}
+
+.carousel-button:hover {
+  background-color: #2b7fff;
+  border: 1px solid var(--color-primary-white);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-primary-white);
+}
+
 /* how-to-find-section */
 
 .how-to-find-section {
   margin-bottom: 94px;
 }
 
-.contact-grid {
+.contact-container {
   display: flex;
   gap: 32px;
+  align-items: stretch;
 }
 
 .contact-map {
+  display: block;
+  width: 100%;
+  border: 0;
   border-radius: 32px;
-  width:605px;
-  height: 481px;
+  min-height: 481px;
+}
+
+.contact-form{
+  flex-shrink: 0;
 }
 
 .form {
-  padding:48px 57px 48px 56px;
+  padding: 48px 57px 48px 56px;
   background-color: var(--color-primary-dark);
   border-radius: 32px;
-  display:grid;
-  gap:16px;
-  position:relative;
-
+  display: grid;
+  gap: 16px;
+  position: relative;
 }
 
 .form-title {
@@ -334,15 +425,16 @@ h1 {
   line-height: normal;
   outline: none;
   box-shadow: none;
-  background-clip: padding-box;  
+  background-clip: padding-box;
 }
 
 .form-input::placeholder {
   color: var(--color-primary-white);
 }
 
-.form-input:active, .form-input:hover {
-  border: 2px solid var(--color-primary-white);  
+.form-input:active,
+.form-input:hover {
+  border: 2px solid var(--color-primary-white);
 }
 .accent-bottom {
   font-family: 'Roboto', sans-serif;
@@ -356,7 +448,7 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   background-color: var(--color-primary-blue);
-  border:2px solid var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
   padding: 16px 32px;
   border-radius: 32px;
   cursor: pointer;
@@ -385,7 +477,6 @@ h1 {
 /* footer */
 
 .footer {
-  display: flex;
   padding: 56px 101px 56px 100px;
   gap: 186px;
   background-color: var(--color-primary-dark);
@@ -394,12 +485,22 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
 .footer-link {
   color: var(--color-primary-white);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  gap: 16px;
 }
 
 .footer-link:hover {
@@ -408,11 +509,13 @@ h1 {
 }
 
 .footer-link-list {
-  gap: 16px;
+  
 }
 
 .footer-icon-list {
-  display: inline-flex;
+  display: flex;
+  margin-top: 16px;
+  gap: 24px;
 }
 
 .footer-icon-link svg {
@@ -423,6 +526,10 @@ h1 {
 .footer-icon-link:hover svg {
   transform: scale(1.1);
   transition: fill 0.3s ease;
+}
+
+.politico {
+  
 }
 
 .politico-link {
