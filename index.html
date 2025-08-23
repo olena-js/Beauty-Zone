@@ -54,7 +54,7 @@
             <div class="container">
                 <h1 class="hero">Косметологічна клініка</h1>
                 <p class="beauty-zone" lang="en">Beauty <br> Zone</p>
-                <button class="top-btn" type="button">Замовити дзвінок</button>
+                <button class="modal-btn-open" type="button">Замовити дзвінок</button>
                 <p class="beauty-item">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
@@ -114,7 +114,7 @@
                 <h2 class="container-title">Наші <span class="accent">процедури</span></h2>
                 <div class="procedures-container">
                     <button class="carousel-button" type="button">
-                        <svg class="carousel-arrow" width="16" height="16">
+                        <svg class="carousel-arrow" width="20" height="20">
                             <use href="/sprite.svg#icon-arrow-left">
                             </use>
                         </svg>
@@ -140,7 +140,7 @@
                         </li>
                     </ul>
                     <button class="carousel-button" type="button">
-                        <svg class="carousel-arrow" width="16" height="16">
+                        <svg class="carousel-arrow" width="20" height="20">
                             <use href="/sprite.svg#icon-arrow-right">
                             </use>
                         </svg>
@@ -234,7 +234,29 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button type="button" class="modal-btn-close">
 
+            </button>
+            <div class="modal-container">
+                <h2 class="modal-title">Замовити дзвінок</h2>
+                <form id="form" class="form" autocomplete="on" novalidate>
+                    <h3 class="form-title">Запишіться <span class="accent-bottom">безкоштовно</span> <br> та отримайте подарунок</h3>
+                    <input id="fullName" class="form-input" name="fullName" type="text" placeholder="Ваше ім’я та прізвище" required>
+                    <input id="phone" class="form-input" name="phone" type="tel" placeholder="Ваш номер телефону" required>
+                    <input id="email" class="form-input" name="email" type="email" placeholder="Ваша електронна пошта" required>
+                    <button class="bottom-btn" type="submit">Записатись безкоштовно</button>
+                
+                    <p class="policy">Натискаючи на кнопку я погоджуюсь <a class="policy-link" href="#" target="_self">з політикою
+                            конфіденційності</a></p>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="./modal.js">
+
+    </script>
 </body>
 
 </html>

@@ -191,7 +191,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-.top-btn {
+.modal-btn-open {
   color: var(--color-primary-white);
   font-size: 18px;
   font-weight: 600;
@@ -204,8 +204,8 @@ h1 {
   margin-bottom: 14px;
 }
 
-.top-btn:hover,
-.top-btn:active {
+.modal-btn-open:hover,
+.modal-btn-open:active {
   color: var(--color-primary-dark);
   background-color: transparent;
 }
@@ -362,7 +362,7 @@ h1 {
 }
 
 .carousel-arrow {
-  fill: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 
 .carousel-button:hover {
@@ -371,7 +371,7 @@ h1 {
 }
 
 .carousel-button:hover .carousel-arrow {
-  fill: var(--color-primary-white);
+  color: var(--color-primary-white);
 }
 
 /* how-to-find-section */
@@ -477,12 +477,24 @@ h1 {
 /* footer */
 
 .footer {
+  position: relative;
   padding: 56px 101px 56px 100px;
   gap: 186px;
   background-color: var(--color-primary-dark);
   color: var(--color-primary-white);
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+}
+
+.footer::after {
+  position: absolute;
+  background-image: url(./images/footer-section-background.png);
+  background-size: 100%;
+  width: 247px;
+  height: 155px;
+  content: '';
+  bottom: 0;
+  right: 0;
 }
 
 .footer-container {
@@ -549,4 +561,56 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 31, 74, 0.40);
+}
+
+.backdrop.is-hidden {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+}
+
+.modal-title {
+  font-family:'Play', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  color: var(--color-primary-white);
+}
+
+.modal-container {
+  max-width: 435px;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
