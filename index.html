@@ -66,13 +66,22 @@
                         <p class="about-us-text">Наша косметологічна клініка пропонує вам професійні послуги <br> з догляду за шкірою обличчя та тіла. </p>
                         <p>B <span class="p-accent" lang="en">Beauty zone</span> ми гарантуємо найвищі стандарти якості <br> та приємний сервіс. Наші косметологічні процедури та препарати <br> допоможуть вам підтримувати свою красу та молодість. <br> З нами краса назавжди!</p>
                     </div>
-                    <div class="face-images">
-                        <ul>
-                            <li><img class="face-img" src="./images/face-2.jpg" alt="face 2"></li>
-                            <li><img src="./images/Star-2.svg" alt="star 2"></li>
-                            <li><img class="face-img" src="./images/face-1.jpg" alt="face 1"></li>
-                            <li><img src="./images/Star-3.svg" alt="star 3"></li>
-                            <li><img src="./images/Star-1.svg" alt="star 1"></li>
+                    <div>
+                        <ul class="face-images">
+                            <li><svg class="star star-two" aria-hidden="true">
+                                    <use href="./sprite.svg#Star-2">
+                                </svg>
+                            </li>
+                            <li><img class="face face-befor" src="./images/face-1.jpg" alt="face 1"></li>
+                            <li><svg class="star star-three" aria-hidden="true">
+                                    <use href="./sprite.svg#Star-3">
+                                </svg>
+                            </li>
+                            <li><img class="face face-after" src="./images/face-2.jpg" alt="face 2"></li>
+                            <li><svg class="star star-one" aria-hidden="true">
+                                    <use href="./sprite.svg#Star-1">
+                                </svg> 
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -163,10 +172,14 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="contact-form">
-                        <form id="form" class="form" autocomplete="on" novalidate>
+                        <form id="contactForm" class="form" autocomplete="on">
                             <h3 class="form-title">Запишіться <span class="accent-bottom">безкоштовно</span> <br> та отримайте подарунок</h3>
-                            <input id="fullName" class="form-input" name="fullName" type="text" placeholder="Ваше ім’я та прізвище" required>
-                            <input id="phone" class="form-input" name="phone" type="tel" placeholder="Ваш номер телефону" required>
+                            <input id="fullName" class="form-input" name="fullName" type="text" placeholder="Ваше ім’я та прізвище" required
+                            pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ]+(?:[-' ][A-Za-zА-Яа-яІіЇїЄєҐґ]+)+$"
+                            title="Введіть ім’я та прізвище через пробіл (два слова)">
+                            <input id="phone" class="form-input" name="phone" type="tel" placeholder="Ваш номер телефону" required
+                            pattern="^\+380\d{9}$"
+                            title="Формат: +380XXXXXXXXX">
                             <input id="email" class="form-input" name="email" type="email" placeholder="Ваша електронна пошта" required>
                             <button class="bottom-btn" type="submit">Записатись безкоштовно</button>
         
@@ -236,13 +249,21 @@
     </footer>
     <div class="backdrop n">
         <div class="modal">
-            <button type="button" class="modal-btn-close">
+            <button type="button" class="modal-btn-close" >
+                <svg class="icon-close" aria-hidden="true">
+                    <use href="./sprite.svg#icon-close">
+                </svg>
+                    
             </button>
-            <h2 class="modal-title">Замовити дзвінок</h2>
-            <form id="form" class="form" autocomplete="on" novalidate>
+            <h2 class="modal-title">Замовити <br> дзвінок</h2>
+            <form id="modalForm" class="form" autocomplete="on">
                 <h3 class="form-title">Запишіться <span class="accent-bottom">безкоштовно</span> <br> та отримайте подарунок</h3>
-                <input id="fullName" class="form-input" name="fullName" type="text" placeholder="Ваше ім’я та прізвище" required>
-                <input id="phone" class="form-input" name="phone" type="tel" placeholder="Ваш номер телефону" required>
+                <input id="fullName" class="form-input" name="fullName" type="text" placeholder="Ваше ім’я та прізвище" required
+                pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ]+(?:[-' ][A-Za-zА-Яа-яІіЇїЄєҐґ]+)+$"
+                title="Введіть ім’я та прізвище через пробіл (два слова)">
+                <input id="phone" class="form-input" name="phone" type="tel" placeholder="Ваш номер телефону" required
+                pattern="^\+380\d{9}$"
+                title="Формат: +380XXXXXXXXX">
                 <input id="email" class="form-input" name="email" type="email" placeholder="Ваша електронна пошта" required>
                 <button class="bottom-btn" type="submit">Записатись безкоштовно</button>
                 <p class="policy">Натискаючи на кнопку я погоджуюсь <a class="policy-link" href="#" target="_self">з політикою

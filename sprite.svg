@@ -34,5 +34,18 @@
     <symbol id="icon-arrow-left" viewBox="0 0 36 32">
         <path fill="currentColor" d="M1.062 17.414c-0.781-0.781-0.781-2.047 0-2.828l12.728-12.728c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-11.314 11.314 11.314 11.314c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0l-12.728-12.728zM36 18h-33.524v-4h33.524v4z"></path>
     </symbol>
+    <symbol id="Star-1" viewBox="0 0 32 32">
+        <path d="M6.693 0l10.657 10.184 14.321-3.491-10.184 10.657 3.491 14.321-10.657-10.184-14.321 3.491 10.184-10.657-3.491-14.321z"></path>
+    </symbol>
+    <symbol id="Star-2" viewBox="0 0 32 32">
+        <path d="M24.979 0l-3.491 14.321 10.184 10.657-14.321-3.491-10.657 10.184 3.491-14.321-10.184-10.657 14.321 3.491 10.657-10.184z"></path>
+    </symbol>
+    <symbol id="Star-3" viewBox="0 0 30 32">
+        <path d="M8.965 1.136l8.153 9.994 12.812-1.483-9.994 8.153 1.483 12.813-8.153-9.994-12.813 1.483 9.994-8.153-1.483-12.813z"></path>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+        <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l8 8 8-8"></path>
+        <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 24l8-8 8 8"></path>
+    </symbol>
 
 </svg>
